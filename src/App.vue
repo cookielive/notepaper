@@ -1,13 +1,17 @@
+
 <template>
-  <div id="app">{{msg}}</div>
+  <dragdiv master-style="{'width':'100%','height':'800px'}"></dragdiv>
 </template>
 
 <script>
+  import dragdiv from './components/DragDiv.vue';
   module.exports = {
-    data:()=>{
+    data(){
       return {
-        msg:'范德萨发ewqwet'
       }
+    },
+    components:{
+      dragdiv
     }
   }
 </script>
